@@ -1,0 +1,16 @@
+{
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-11",
+      "path": "C:/Program Files/RedHat/java-11-openjdk-11.0.8-2/bin"
+    }
+  ],
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/intellij-java-google-style.xml",
+
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "json"],
+  "diagnostic.checkCurrentLine": true,
+  "coc.preferences.noselect": false,
+  "java.format.enabled": true,
+  "java.format.onType.enabled": false,
+  "suggest.maxCompleteItemCount": 12
+}
