@@ -6,7 +6,7 @@
     }
   ],
   "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/intellij-java-google-style.xml",
-
+  "java.jdt.ls.vmargs": "-javaagent:C:/Users/koha/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar -Xbootclasspath/a:C:/Users/koha/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar",
   "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "json"],
   "diagnostic.checkCurrentLine": true,
   "coc.preferences.noselect": false,

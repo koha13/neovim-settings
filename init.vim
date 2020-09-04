@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'kien/ctrlp.vim'
   Plug 'tpope/vim-commentary'
+  Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
 
@@ -46,6 +47,11 @@ inoremap <leader>s <C-c>:w<cr>
 noremap <leader>q :q<cr>
 noremap <leader>wq :wq<cr>
 nnoremap <leader>F :Format<cr>
+
+" Change visual mode color
+hi Visual  guifg=#000000 guibg=Grey gui=none
+
+" NERDTree config
 let g:NERDTreeShowHidden = 1
 let g:NERDTreeStatusline = ''
 let g:NERDTreePatternMatchHighlightFullName = 1
@@ -62,6 +68,13 @@ let NERDTreeMapActivateNode='<TAB>'
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle
 nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+
+" highlightedyank
+if !exists('##TextYankPost')
+  map y <Plug>(highlightedyank)
+endif
+let g:highlightedyank_highlight_duration = 300
+highlight HighlightedyankRegion ctermbg=0 guibg=#32a893
 
 " Vim-airline
 let g:airline#extensions#tabline#enabled = 1
