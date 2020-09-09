@@ -44,7 +44,7 @@ xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
 nnoremap <leader>s :w<cr>
 inoremap <leader>s <C-c>:w<cr>
-noremap <leader>q :q<cr>
+noremap <leader>qq :q<cr>
 noremap <leader>wq :wq<cr>
 nnoremap <leader>F :Format<cr>
 
